@@ -25,7 +25,7 @@ public class ArraySum {
             for(int i = 0; i < length; i++) {               
                 global_sum += vector[i];
             }
-            System.out.println("Process " + rank + " local sum is: " + global_sum);                       
+            System.out.println("Process " + rank + " sum is: " + global_sum);                       
             for (int j = 1; j < size; j++) {               
                 int k=0;
                 for (int iterator = j * length; iterator < j * length + length; iterator++) {
